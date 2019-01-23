@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Backgrounds & Borders</title>
+  <style>
+  #box-1 {
+    background-color:blanchedalmond;
+    /* border-width: 3px;
+    border-color: red;
+    border-style:solid; */
+    border: 3px solid red;
+    /* any order for above all in one border tag */
+    border-radius:10px;
+    /* 10px common for curvy boxes */
+  }
+
+  #box-2 {
+    background:#333;
+    color:#fff;
+    border-top: blue solid 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* you can choose which corners to round - border-'corner'-radius */
+  }
+
+  #box-3 {
+    /* background-image: url('./img/stars.jpg');
+    background-repeat:no-repeat;
+    /* default, images will repeat if they're smaller than area they're filling, can control if they repeat x way, or y way, or no-repeat. */
+    /* background-position:center top;
+    /* moves image around; values: x axis, then y axis - VERY useful seems */
+    /* background-size: cover; */
+    background: url('./img/stars.jpg') no-repeat center center/cover;
+    /* same as all separate backgrounds. background needs image source/color, repeat value, position and size/cover etc */
+    color: #fff;
+    height: 300px;
+    width: 600px;
+    /* NOTICE, the image only shows up in that small area BECAUSE OF THE DIV IT IS IN! */
+    /* only takes actual space of the element, div, not whole picture will show */
+  }
+
+  #box-4 {
+    background: url('./img/leaf.png') no-repeat center center;
+    /* positioning, moves background img ANYWHERE within the div. keep in mind */
+    background-attachment: fixed;
+    /* cool way to keep image fixed while browser scrolls up and down, img will stay while scrolling. */
+  }
+  </style>
+</head>
+<body>
+  <div id="box-1">
+    <h3>Box One</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque alias, distinctio vero nemo cumque nihil quae unde recusandae dignissimos.</p>
+  </div>
+  <br>
+  <div id="box-2">
+    <h3>Box Two</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque alias, distinctio vero nemo cumque nihil quae unde recusandae dignissimos.</p>
+  </div>
+  <div id="box-3">
+    <h3>Box Three</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque alias, distinctio vero nemo cumque nihil quae unde recusandae dignissimos.</p>
+  </div>
+  <div id="box-4">
+    <h3>Box Four</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque alias, distinctio vero nemo cumque nihil quae unde recusandae dignissimos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque alias, distinctio vero nemo cumque nihil quae unde recusandae dignissimos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque alias, distinctio vero nemo cumque nihil quae unde recusandae dignissimos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque alias, distinctio vero nemo cumque nihil quae unde recusandae dignissimos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque alias, distinctio vero nemo cumque nihil quae unde recusandae dignissimos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque alias, distinctio vero nemo cumque nihil quae unde recusandae dignissimos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque alias, distinctio vero nemo cumque nihil quae unde recusandae dignissimos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque alias, distinctio vero nemo cumque nihil quae unde recusandae dignissimos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque alias, distinctio vero nemo cumque nihil quae unde recusandae dignissimos.</p>
+  </div>
+</body>
+</html>
