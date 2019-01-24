@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box Model / Margin & Padding</title>
+  <style>
+  /* Box Model Notes */
+  /* by default: div width is all the way across */
+  /* margin is outside of element, padding is inside of element */
+  /* CSS Reset * asterisk chooses everything */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* includes width and padding together, so width is always total 500, whether padding makes it go over or not. */
+  }
+  .box {
+    background: #f4f4f4;
+    border: 2px #777 solid;
+    width: 500px;
+    
+    /* Padding on all sides */
+    padding: 20px;
+    /* true width is width + plus the padding so its not 500 anymore, its 620px, unless you use box-sizing: border-box above */
+
+    /* Padding per side */
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    /* all these override higher up. further down properties will override higher up ones */
+    
+    /* Padding shorthand = top right bottom left (clockwise) */
+    padding: 10px 20px 10px 20px;
+
+    /* Padding shorthand = top/bottom right/left */
+    padding: 10px 20px;
+
+    /* Margin on all sides */
+    margin: 20px;
+
+    /* Margin per side */
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    /* all these override higher up. further down properties will override higher up ones */
+    
+    /* Margin shorthand = top right bottom left (clockwise) */
+    margin: 10px 20px 10px 20px;
+
+    /* Margin shorthand = top/bottom right/left */
+    margin: 10px 20px;
+    }
+
+    .box h3 {
+      padding-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h3>Box One</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nesciunt atque asperiores, amet velit consequuntur possimus blanditiis voluptatibus repellendus hic!</p>
+  </div>
+  <div class="box">
+    <h3>Box Two</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nesciunt atque asperiores, amet velit consequuntur possimus blanditiis voluptatibus repellendus hic!</p>
+  </div>
+  <!-- browser has default spacing on certain elements -->
+</body>
+</html>
