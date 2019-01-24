@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Order & Visibility</title>
+  <style>
+  h1 {
+    /* display: none; */
+    /* important to place in media query section for smaller mobile screens. */
+    /* visibility: hidden; */
+    /* visibility takes up space, but does not show on page. */
+    color:blue !important;
+    /* !important flags, show it doesn't matter if there is a class of hello that covers this tag, this css color will always be most important css property for this element */
+  }
+
+
+  .hello {
+    color: red;
+    /* margin-top: -30px;
+    margin-left: -30px; */
+    /* can't do negative padding however */
+  }
+  /* further down a page, the style will take precedence. but a class always takes precedence for css properties. */
+  </style>
+</head>
+<body>
+  <h1 class="hello">Hello World</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias harum quis placeat nobis esse cupiditate consectetur, minima veritatis corporis facere.</p>
+</body>
+</html>
