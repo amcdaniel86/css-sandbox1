@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Links & Buttons</title>
+  <style>
+    /* HOW TO STYLE BUTTONS AND LINKS, WITH STATES, AND HOVER ACTIONS AS WELL. */
+
+    body {
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /* Link States (styling) */
+    /* to remove underline on link, use text-decoration: none under a property */
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      /* prettier way of having links, use pseudo selectors, tag:hover/action and then property will change when action happens */
+      color: coral;
+      /* font-size:40px; */
+      /* text-decoration: underline; */
+    }
+
+    /* a:visited {
+      color: red;
+    } */
+
+    a:active {
+      color: red;
+    }
+
+    /* Button Styling */
+    .btn {
+      background: #4c6ca0;
+      color:#fff;
+      border: none;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      /* turns into pointer hand when hovered over */
+    }
+
+    .btn:hover {
+      color: #f4f4f4;
+      background: #446190;
+    }
+  </style>
+</head>
+<body>
+  <!-- Button vs Link -->
+  <br>
+    <a class="btn" href="#">My Link</a> 
+    <br> <br>
+    <button class="btn">My Button</button>
+    <!-- both inline elements -->
+    <!-- with any button or link to style this way - you would need to apply the class btn. -->
+</body>
+</html>
