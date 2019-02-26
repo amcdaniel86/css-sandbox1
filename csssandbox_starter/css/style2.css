@@ -15,19 +15,17 @@ h2.primary-heading { /* normal is just #green-heading, element h2 optional */
 }
 
 /* Multi-Selectors */
-#welcome, #about { /* both divs */
+#welcome, #about { both divs
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 5px;
 }
 
-/* Nested Selector */ 
-#welcome p { /* all p's within id welcome */
+/* Nested Selector  */
+#welcome p { all p's within id welcome
   font-size: 20px;
 }
 
 #about {
   color: white;
 }
-
-/* dev tools - user agent stylesheet: default browser styles */
