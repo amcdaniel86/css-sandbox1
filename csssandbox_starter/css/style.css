@@ -1,3 +1,33 @@
-h3 {
+/* Element selectors */
+body {
+  background-color: #333;
+}
+
+h2.primary-heading { /* normal is just #green-heading, element h2 optional */
   color: blue;
 }
+
+/* . is for classes */
+/* # is for id's */
+
+#welcome {
+  background-color: #f4f4f4;
+}
+
+/* Multi-Selectors */
+#welcome, #about { /* both divs */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+/* Nested Selector */ 
+#welcome p { /* all p's within id welcome */
+  font-size: 20px;
+}
+
+#about {
+  color: white;
+}
+
+/* dev tools - user agent stylesheet: default browser styles */
