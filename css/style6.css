@@ -1,0 +1,64 @@
+/* Box Model Notes */
+
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* allows padding to be added without adding to the width. IMPORTANT attribute */
+  /* true width is width + plus the padding so its not 500 anymore, its 620px, unless you use box-sizing: border-box above */
+}
+
+  /* by default: div width is all the way across */
+  /* margin is outside of element, padding is inside of element */
+  /* CSS Reset * asterisk chooses everything */
+  .box {
+    background: #f4f4f4;
+    border: 2px #777 solid;
+    width: 500px;
+    /* includes width and padding together, so width is always total 500, whether padding makes it go over or not. */
+
+    /* Padding on all sides */
+    padding: 20px;
+
+    /* Padding per side */
+    /* padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px; */
+    
+    /* Padding shorthand = top right bottom left (clockwise) */
+    padding: 10px 20px 10px 20px;
+    
+    /* Padding shorthand = top/bottom right/left */
+    padding: 10px 20px;
+    
+    /* Margin on all sides */
+    margin: 20px;
+
+    /* Margin per side */
+    /* margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px; */
+    
+    /* Margin shorthand = top right bottom left (clockwise) */
+    margin: 10px 20px 10px 20px;
+    
+    /* Margin shorthand = top/bottom right/left */
+    margin: 10px 20px;
+  }
+
+.box h3 {
+  padding-bottom: 10px;
+}
+
+    /* all these override higher up. further down properties will override higher up ones */
+    
+
+
+    /* all these override higher up. further down properties will override higher up ones */
+    
+    /* Margin shorthand = top right bottom left (clockwise) */
+
+    /* Margin shorthand = top/bottom right/left */

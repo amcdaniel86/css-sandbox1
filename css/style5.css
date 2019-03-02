@@ -1,0 +1,49 @@
+/* .jpeg files are NOT tranparent */
+/* .png files ARE transparent */
+
+#box-1 {
+ background-color: blanchedalmond;
+  /* border-width: 3px;
+  border-color: red;
+  border-style: solid; not preferred way*/
+  border: 3px solid red;
+  /* any order for above all in one border tag */
+ /* border-styles - dashed, dotted, double, groove, hidden, inherit, initial, inset, none, outset, ridge, solid */
+ border-radius:10px; /* % or px */
+  /* 10px common for curvy boxes */
+}
+
+#box-2 {
+background: #333;
+color: #fff;
+border-top: blue solid 3px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+  /* you can choose which corners to round - border-'corner'-radius */
+}
+
+#box-3 {
+/* background-image: url('../img/stars.jpg'); */
+/* background-repeat: no-repeat; */
+/* default, images will repeat if they're smaller than area they're filling, can control if they repeat x way, or y way, or no-repeat. */
+/* background-position: center center; */
+/* x-axis y-axis moves image around WITHIN the div; values: x axis, then y axis - can put px or words like center, VERY useful seems */
+/* background-size: cover; full image will shows with cover property */
+/* same as all separate backgrounds. background needs image source/color, repeat value, position and size/cover etc */
+background: url('../img/stars.jpg') no-repeat center center/cover;
+/* same as first 4 lines of background-property, simpler code */
+color: #fff;
+height: 300px;
+width: 600px;
+  /* NOTICE, the image only shows up in that small area BECAUSE OF THE DIV IT IS IN! */
+  /* only takes actual space of the element, div, not whole picture will show */
+}
+
+#box-4 {
+  background: url('../img/leaf.png') no-repeat center center;
+  /* positioning, moves background img ANYWHERE within the div. keep in mind */
+  /* remember png images, are see-through, important to remember */
+  
+  background-attachment: fixed;
+  /* cool way to keep image fixed while browser scrolls up and down, img will stay while scrolling. */
+}

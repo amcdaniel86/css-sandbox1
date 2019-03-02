@@ -1,0 +1,18 @@
+
+/* Centering Elements */
+/* set container element with margin auto */
+
+/* max-width perfect answer for responsive web pages for mobile devices. it'll be width of viewport until it hits value, then width stops stretching. */
+/* always max width on containers */
+
+/* margin auto leaves margin even on both sides of target styled object, you can put a margin for top and bottom, if auto is sides. */
+
+
+/* Text Align */
+/* can leave each one above it; if any below, the lowest one will override the above style. */
+
+/* when screen condensed, lines up text perfectly on sides. center just centers it, no regard to side alignment. */
+
+/* Floats */
+/* always add a width when floating an object, balance the %'s to make them align correctly. */
+/* a div class="clr", .clr {clear: both} is always needed in between other objects and any floating objects so they do not overlap */

@@ -1,7 +1,26 @@
 /* dev tools - user agent stylesheet: default browser styles */
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto' sans-serif;
+  font-size: 16px;
+  /* standard font-size is 16 pixels, comes from html tag. */
+  line-height: 1.6em;
+  /* good line-spacing for body sections */
 }
 
-/* Using google fonts - fonts.google.com */
+#welcome p span {
+  font-weight:bold;
+}
+
+#about p span {
+  font-style: italic;
+}
+/* font base properties */
+/* Using google fonts - fonts.google.com - Roboto is a good one. */
+/* google font, embed the link, and then type roboto for font property. */
+
+/* Size Units */
+/* px = pixels - 1px = 1/96th of 1 in */
+/* also, '%' = to parent element */
+/* em = multiplier of font-size parent element */
+/* rem = multiplier of font-size root element */

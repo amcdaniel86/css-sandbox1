@@ -2,5 +2,5 @@
 /* Must link the files in order for the CSS to register on webpage. Always preferred way to do css */
 
 h3 {
-  color: blue;
+  color: #333;
 }
