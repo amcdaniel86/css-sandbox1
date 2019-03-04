@@ -5,64 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Inline & Block Styling</title>
-  <style>
-    
-    /* NAVBAR, li normally shows as block, reason to show inline */
-    li {
-      /* forces them to show side by side */
-      display: inline;
-    }
-
-    li a {
-      padding-right: 20px;
-    }
-/* CENTERED ITEMS, img normally inline, reason to show as block */
-    img {
-      display: block;
-      margin: auto;
-    }
-
-    .box {
-      /* you cannot use width on inline display */
-      /* width: 32%;
-      display: inline; */
-      width: 32%;
-      display: inline-block;
-      /* allows horizontally placed blocks */
-      box-sizing: border-box;
-      /* remember means: includes width and padding together, so width is always total 500, whether padding makes it go over or not. */
-      background: #f4f4f4;
-      padding: 20px;
-      margin-bottom: 15px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style10.css">
 </head>
 <body>
-  <!-- by DEFAULT, list items are BLOCK level, KEY DIFFERENCE, li's are block level, while a's are inline. easy to mix up -->
   <ul>
-    <li><a href="#">Technology</a></li>
+    <li><a href="#">Technology</a></li> <!-- <li> is block level, knocks next item down by default-->
     <li><a href="#">Business</a></li>
     <li><a href="#">Fashion</a></li>
   </ul>
+  <!-- by DEFAULT, list items are BLOCK level, KEY DIFFERENCE, li's are block level, while a's are inline. easy to mix up -->
 
-  <br><br>
+<br><br>
 
-  <!-- TIP TO CENTER IMAGES OR ANY INLINE ELEMENT, make the img/inline tag block level so it covers entire width of viewport, then use margin: auto, to center it in middle of page. CANNOT do margin: auto on an inline element -->
-  <img src="./img/leaf.png" alt="My image">
+<img src="./img/leaf.png" alt="My image">
+<!-- TIP TO CENTER IMAGES OR ANY INLINE ELEMENT, make the img/inline tag block level so it covers entire width of viewport, then use margin: auto, to center it in middle of page. CANNOT do margin: auto on an inline element -->
 
-  <br><br>
+<br><br>
 
-  <div class="box">
-    <h3>Heading</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, dolores earum. Tempore similique laborum labore deleniti quibusdam rerum, eos quaerat!</p>
-  </div>
-  <div class="box">
-    <h3>Heading</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, dolores earum. Tempore similique laborum labore deleniti quibusdam rerum, eos quaerat!</p>
-  </div>
-  <div class="box">
-    <h3>Heading</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, dolores earum. Tempore similique laborum labore deleniti quibusdam rerum, eos quaerat!</p>
-  </div>
+<div class="box">
+  <h3>Heading</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nam odio officia saepe ut id facere aspernatur officiis blanditiis libero!</p>
+</div>
+<div class="box">
+  <h3>Heading</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nam odio officia saepe ut id facere aspernatur officiis blanditiis libero!</p>
+</div>
+<div class="box">
+  <h3>Heading</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nam odio officia saepe ut id facere aspernatur officiis blanditiis libero!</p>
+</div>
+
 </body>
 </html>

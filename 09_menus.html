@@ -5,80 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Menu Styling</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-/* Nav bar links REMOVE UNDERLINES HERE */
-/* to target and alter the actual links, must target the a tags */
-
-/* Navbar Styling */
-.navbar {
-  list-style: none;
-  /* list bullet dots are removed from ul class tag, link underlines removed from a class tags. */
-  margin: 0;
-  padding: 0;
-  background: #4c6ca0;
-  border-radius: 5px;
-  overflow: auto;
-  /* keeps background appearing over floated elements, instead of being smooshed */
-}
-/* .navbar parent element of .navbar li, to fix background, go to parent element. */
-
-.navbar li {
-  /* places all list items in this class ul, side by side when floated. left puts them left justified, right put them on right corner of screen. floating collapses the background color, be aware of that.*/
-  float: left;
-}
-
-.navbar li a {
-  display: block;
-  /* display: block fills out the links in navbar so it looks balanced, when padding is added below. without display: block on the a's, the links are as wide as the navbar. */
-  color: #fff;
-  text-decoration: none;
-  padding: 15px 20px;
-}
-
-.navbar li a:hover {
-  background-color: #446190;
-  color: #f4f4f4;
-}
-
-/* Side Bar Menu Styling */
-    .side-menu {
-      list-style: none;
-      /* list-style: none removes bullet dots */
-      border: 1px #ddd solid;
-      border-radius: 10px;
-      width: 300px;
-      padding: 20px;
-    }
-
-    .side-menu li {
-      font-size: 18px;
-      line-height: 2.4em;
-      /* line-height, good to spread links apart in nav menu bars */
-      border-bottom: dotted 1px #ddd;
-    }
-
-    .side-menu li:last-child {
-      border: none;
-    }
-
-    .side-menu li a {
-      color: #333;
-      text-decoration: none;
-      /* text-decoration: none targeting a removes underlines */
-    }
-
-    .side-menu li a:hover {
-      color: coral;
-    }
-    /* great to give links an extra touch */
-  </style>
+  <link rel="stylesheet" href="css/style9.css">
 </head>
 <body>
   <ul class="navbar">
-    <!-- navbar should slide across top of screen and each item should float -->
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Services</a></li>
@@ -86,11 +16,15 @@
   </ul>
   <br><br>
   <ul class="side-menu">
-    <!-- DEFAULT, ul have 20px padding on left and right-->
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Services</a></li>
     <li><a href="#">Contact</a></li>
+  </ul>
+    <!-- navbar should slide across top of screen and each item should float -->
+
+    <!-- DEFAULT, ul have 20px padding on left and right-->
+
   </ul>
 </body>
 </html>

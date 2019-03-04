@@ -1,0 +1,35 @@
+
+   /* Tag normally block DISPLAY AS INLINE */
+
+   li {
+     display: inline;
+     /* forces them to show side by side */
+    }
+    /* a NAVBAR gives reason to show li's inline (horizontal) because normally they display block which isn't good for navbars. */
+    
+    li a {
+      padding-right: 20px;
+    }
+    
+    /* Tag normally inline DISPLAY AS BLOCK */
+
+/* CENTERED ITEMS: img is inline, to center it; display:block; */
+
+img {
+  display: block; /*because block takes up whole horizontal space is why */
+  margin: auto;
+}
+
+.box {
+  width: 32.8%; /* but still vertical because div's vertical block by default.
+  /* display: inline; width does not apply with inline */
+  display: inline-block; /* allows horizontally placed blocks */
+  box-sizing: border-box;
+  /* remember means: includes width and padding together, so width is always total 500, whether padding makes it go over or not. */
+  background: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+    
+ 

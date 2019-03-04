@@ -1,0 +1,151 @@
+* {
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* 
+  -May want to add "border-box for "box-sizing so padding does not affect width
+  -Reset margin and padding 
+  Final: same as mine
+ */
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #344a72;
+  color: #fff;
+  line-height: 1.8;
+  /* 
+    -Background color is #344a72
+    Final: color: #fff; wants to change font color (black) in form-wrap
+    also, line-height: 1.8
+  */
+}
+
+a {
+  text-decoration: none;
+  /* 
+  Underlined links are ugly :)
+ */
+}
+
+#container {
+  margin: 30px auto;
+  max-width: 400px;
+  padding: 20px;
+  /* 
+  -Remember, margin: auto on left and right will center a block element 
+  -I would also set a "max-width" for responsiveness
+  -May want to add some padding
+  Final: added tl mar of 30px
+  changed padding from 40 to 20px;
+  */
+}
+
+.form-wrap {
+  background-color: #fff;
+  padding: 15px 25px;
+  color: #333;
+  /* 
+    This is the white area around the form and heading, etc
+    final: added padding here of 15px 25px;
+    added color: #333; for font color
+  */
+}
+
+.form-wrap h1,
+.form-wrap p {
+  text-align: center;
+  /* 
+    May want to center these
+    final: removed padding
+  */
+}
+
+.form-wrap .form-group {
+  margin-top: 20px;
+  /* 
+    Each label, input is wrapped in .form-group
+    final: margin-top: 15px;
+    removed text-align: center and text-align: justify
+  */
+}
+
+.form-wrap .form-group label {
+  display: block; /* GREAT WAY to put elements on their own line without using <br>. NEVER want to use <br> anyway */
+  color: #666;
+  /* 
+    Label should be turned into a block element
+    final: color: #666;
+    removed margin-bottom: 5px;
+  */
+}
+
+.form-wrap .form-group input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  /* 
+    Inputs should reach accross the .form-wrap 100% and have some padding
+    final: changed padding to 10px from 5
+    changed border color from ccc to ddd
+    changed border radius to 5 from 2
+  */
+}
+
+.form-wrap button {
+  width: 100%;
+  display: block;
+  background-color: #49c1a2;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  /* 
+    Button should wrap accross 100% and display as block
+    Background color for button is #49c1a2
+    final: changed width from 90 to 100%;
+    changed padding from 5 to 10
+    changed margin-top from bottom 10 to 20.
+    added cursor: pointer;
+    removed margin auto
+  */
+}
+
+.form-wrap button:hover {
+  background-color: #37a08e;
+  /* 
+    Hover background color for button is #37a08e
+  */
+}
+
+.form-wrap .bottom-text {
+  font-size: 13px;
+  line-height: 2em;
+  margin-top: 20px;
+  /* 
+    Bottom text is smaller
+    final: changed font to 12
+    added margin-top: 20px;
+    removed margin: auto
+  */
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  /* 
+  Should be centered
+  final: removed font-size and color
+ */
+}
+
+footer a {
+  color: #49c1a2;
+  /* 
+    Footer link color is #49c1a2
+  */
+}

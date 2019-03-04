@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar Styling */
+
+.navbar {
+  list-style: none;
+  /* list bullet dots are removed from ul class tag */
+  margin: 0;
+  padding: 0;
+  background: #4c6ca0;
+  border-radius: 5px;
+  overflow: auto; /* keeps background in place if floating is used */
+  /* keeps background appearing over floated elements, instead of being smooshed */
+}
+
+.navbar li {
+  float: left; /* collapsed the background */
+  /* places all list items in this class ul, side by side, when floated. left puts them left justified, right put them on right corner of screen. floating collapses the background color, be aware of that.*/
+  /* .navbar parent element of .navbar li, to fix background, go to parent element. */
+}
+
+.navbar li a {
+  display: block;
+  /* display: block fills out links in navbar to look balanced, when padding is added below. without display: block on the a's, the links are as wide as navbar because a's are inline elements */
+  color: #fff;
+  text-decoration: none;
+  /* link underlines removed from a class tags. */
+  padding: 15px 20px;
+}
+
+.navbar li a:hover {
+  background-color: #446190;
+  color: #f4f4f4;
+}
+
+/* Side Menu Styling */
+
+.side-menu { /* ul tag div, Nav bar links REMOVE UNDERLINES HERE */
+  list-style: none; /* list indicates entire list change style */
+  /* list-style: none removes bullet dots */
+  border: 1px #ddd solid;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+}
+
+/* to target and alter the actual links, must target the a tags */
+.side-menu li { /* target items themselves */
+  font-size: 18px;
+  line-height: 2.4em;
+  /* line-height, good to spread links apart in nav menu bars */
+  border-bottom: dotted 1px #ddd;
+}
+
+.side-menu li:last-child {
+  border: none;
+}
+
+.side-menu li a {
+  color: #333;
+  text-decoration: none;
+  /* text-decoration: none targeting a removes underlines */
+}
+
+.side-menu li a:hover {
+  color: coral;
+}
+/* great to give links an extra touch */
+
+
+

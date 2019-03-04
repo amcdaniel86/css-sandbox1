@@ -1,0 +1,48 @@
+/* HOW TO STYLE LINKS AND BUTTONS, including states and hover actions */
+
+/* Link States (styling) */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  /* to remove underline on link, use text-decoration: none under a property */
+}
+
+a:hover {
+  color: coral;
+  /* font-size: 40px; */
+  /* text-decoration: underline; */
+}
+
+/* a:visited { /* not used frequently
+  color: red;
+} */
+
+a:active { /* when you click and hold, what will happen is active state */
+  color: red;
+}
+
+/* Button Styling */
+.btn {
+  background: #4c6ca0;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer; /* turns into pointer hand when hovered over */
+  /* now, any link/button that needs to look like above, then the btn class just needs to be added to that html tag. */
+}
+
+.btn:hover {
+  color: #f4f4f4;
+  background: #446190;
+}
+  /* prettier way of having links, use pseudo selectors, tag:hover/action and then property will change when action happens */
+ 
+
